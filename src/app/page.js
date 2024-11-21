@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="card rounded-2xl grid grid-cols-1 font-[family-name:var(--font-geist-mono)]">
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="grid grid-cols-1 gap-8 p-8 font-[family-name:var(--font-geist-mono)] justify-items-center items-center min-h-screen ">
+        <main className="card rounded-2xl flex flex-col gap-8 p-10">
             <div className={"text-7xl"}>
                 <div className="mb-5">
                     <Image
-                        className="dark:invert"
-                        src="/vercel.svg"
-                        alt="Vercel logomark"
+                        className=""
+                        src="/blossom-flower.svg"
+                        alt="Blossom flower"
                         width={72}
                         height={72}
                     />
@@ -20,6 +20,11 @@ export default function Home() {
             <ol className="list-inside text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
                 <li className="mb-2">Under construction..</li>
             </ol>
+
+            <div className={"mx-auto opacity-80"}>
+                <img className="rounded-2xl" src="/hero-image.jpg" width={458} alt="Blossom flower"/>
+            </div>
+
 
             {/*<div className="flex gap-4 items-center flex-col sm:flex-row">
               <a
@@ -47,7 +52,7 @@ export default function Home() {
               </a>
             </div>*/}
         </main>
-        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center font-[family-name:var(--font-geist-mono)]">
+        <footer className="row-start-3 flex gap-2 flex-wrap items-center justify-center font-[family-name:var(--font-geist-mono)]">
             &copy; {new Date().getFullYear()} · Made by<a className="hover:underline hover:underline-offset-4" href="https://github.com/AndMJ" target="_blank" rel="noopener noreferrer">André João</a>
         </footer>
     </div>
